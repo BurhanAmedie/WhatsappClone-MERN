@@ -10,10 +10,10 @@ const app= express()
 const port = process.env.PORT || 9000
 
 const pusher = new Pusher({
-    appId: "1175146",
-    key: "79cc5d0c852a500469fc",
-    secret: "3aafdb12de79419a75a0",
-    cluster: "us2",
+    appId: "",
+    key: "",
+    secret: "",
+    cluster: "",
     useTLS: true
   });
 
@@ -23,7 +23,7 @@ app.use(cors())
 
 
 //db config 
-const connectUrl = "mongodb+srv://admin:YCIRxkdgqvrMMXhL@cluster0.b4rhl.mongodb.net/WhatsupDb?retryWrites=true&w=majority"
+const connectUrl = ""
 mongoose.connect(connectUrl, {
     useCreateIndex: true,
     useNewUrlParser: true,
